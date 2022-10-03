@@ -1,34 +1,46 @@
 html, body {
+  box-sizing: border-box;
   margin:0;
   padding:0;
-  box-sizing:border-box;
-  background: #837c82;
-}
 
-
-header{
-  background: #e01f30;
-  height: 100px;
-}
-
-main {
-  background: #9e25da; 
-  height: 100px;
-}
-
-aside{
-  background: #39c68a; 
-  height: 100px;
-}
-
-footer{
-  background: #1d1fe2;
-  height: 100px;
+  width: 100%;
+  height:100%;
 }
 
 .container{
-  display:grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: 20hv 70vh 10vh;
+  display: grid;
+
+  background: black;
+
+  width: 100vw;
+  height: 100vh;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  grid-gap: 5px;
+
+  justify-items: center;
 }
+
+.container > div {
+  display: grid;
+
+  background: #7159c1;
+
+  width: 50%;
+  height: 50%;
+  justify-items: center;
+  align-items: center;
+}
+
+.center{
+  align-self: end;
+}
+
+.center-top{
+  align-self: start;
+}
+
+
 
