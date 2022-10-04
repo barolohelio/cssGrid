@@ -27,11 +27,14 @@ html, body {
   display: grid;
 
   background: #7159c1;
+  color: #FFF;
 
+  border-radius: 8px;
   width: 50%;
   height: 50%;
   justify-items: center;
   align-items: center;
+  margin: 5px 5px;
 }
 
 .center{
